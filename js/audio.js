@@ -57,3 +57,9 @@ var stopAudioLink = document.getElementById('next-to-story');
 stopAudioLink.addEventListener('click', function (event) {
     stopAudioRotation();
 });
+
+var stopAudioLinkEnd = document.getElementById('next-to-story-end');
+
+stopAudioLinkEnd.addEventListener('click', function (event) {
+    stopAudioRotation();
+});
