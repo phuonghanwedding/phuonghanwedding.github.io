@@ -18,16 +18,6 @@ function handleToggleAudio() {
     toggleAudio();
 }
 
-// Event listener for scroll
-window.addEventListener('scroll', function () {
-    var audio = document.getElementById('backgroundMusic');
-    if (playWhenScroll && audio.paused && window.scrollY > 1) {
-        toggleAudio();
-    }
-});
-
-
-
 function startRotation() {
     var rotatingImage = document.getElementById('playPauseButton');
     rotatingImage.classList.add('rotating');
@@ -52,6 +42,21 @@ function stopAudioRotation() {
 //         stopAudioRotation();
 //     }
 //   });
+// Event listener for scroll
+// window.addEventListener('scroll', function () {
+//     var audio = document.getElementById('backgroundMusic');
+//     if (playWhenScroll && audio.paused && window.scrollY > 1) {
+//         toggleAudio();
+//     }
+// });
+
+document.addEventListener('click', function (event) {
+    var audio = document.getElementById('backgroundMusic');
+    if (playWhenScroll && audio.paused && window.scrollY > 1) {
+        toggleAudio();
+    }
+});
+
 var stopAudioLink = document.getElementById('next-to-story');
 
 stopAudioLink.addEventListener('click', function (event) {
