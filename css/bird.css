@@ -10,7 +10,7 @@
 }
 
 .wrapper-no4 .button-bird {
-    margin-top: 30vh;
+    margin-top: 32vh;
     width: 260px;
     height: 78px;
     background-color: #891014;
@@ -986,7 +986,7 @@
     }
 
     .wrapper-no4 .button-bird {
-        margin-top: 40vh;
+        margin-top: 46vh;
         width: 150px;
         height: 58px;
         background-color: #891014;
@@ -1115,4 +1115,25 @@
         top: 25px;
     }
 
+}
+
+.processing-circle {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-top: 2px solid #891014;
+    animation: spin 1s linear infinite;
+    position: relative;
+    left: 5px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
