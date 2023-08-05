@@ -627,7 +627,7 @@ strong {
   border-color: var(--border-color);
 }
 
-.custom-form button[type="submit"] {
+/* .custom-form button[type="submit"] {
   background: var(--primary-color);
   border: none;
   color: var(--white-color);
@@ -661,7 +661,7 @@ strong {
 
 .custom-form button[type="submit"]:hover::after {
   transform: translate(0);
-}
+} */
 
 
 /*---------------------------------------
@@ -960,7 +960,7 @@ strong {
   width: 86px;
   height: 125px;
   will-change: background-position;
-  animation-name: fly-cycle;
+  animation-name: fly-cycle-one;
   animation-timing-function: steps(10);
   animation-iteration-count: infinite;
   animation-duration: 1s;
@@ -974,7 +974,7 @@ strong {
   animation-delay: -0.5s;
 }
 
-@keyframes fly-cycle {
+@keyframes fly-cycle-one {
   100% {
     background-position: -900px 0;
   }
