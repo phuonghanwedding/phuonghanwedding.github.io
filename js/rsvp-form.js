@@ -40,6 +40,7 @@ jQuery(document).ready(function ($) {
         var el = document.querySelector(".button-bird");
         var text = document.querySelector(".button-bird__text");
         var $processingCircle = $(this).find('.processing-circle');
+        var form = this;
 
         // Show processing spinner
         $processingCircle.show();
@@ -61,13 +62,15 @@ jQuery(document).ready(function ($) {
 
         $.ajax(settings).done(function (response) {
             console.log(response);
-            
+
             $processingCircle.hide();
 
             if (response == 1) {
                 el.classList.toggle('active');
                 console.log('true');
                 text.innerHTML = 'THANK YOU!';
+                // Reset the form fields
+                form.reset();
             } else {
                 console.log('false');
                 text.innerHTML = 'SUBMIT AGAIN!';
