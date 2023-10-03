@@ -58,7 +58,7 @@
     // var nextYear = (new Date()).getFullYear() + 1;
     // const now = new Date();
     //  const timeRemaining = weddingDate - now;
-    Tick.count.down('2023-10-03T11:30:00').onupdate = function(value) {
+    Tick.count.up('2023-10-03T07:00:00').onupdate = function(value) {
         tick.value = value;
     };
 
